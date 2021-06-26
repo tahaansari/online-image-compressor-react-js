@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+
+img{
+    max-width: 100%;
+}
+.ta-pointer{
+    cursor: pointer;
+}
+.download-all{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.progress{
+    height: 1.6rem;
+}
+.task-list{
+    height: calc(100vh - 250px);
+    overflow-x: hidden;
+    overflow-y:auto;
+}
