@@ -1,14 +1,16 @@
 import {ProgressBar} from 'react-bootstrap';
-const Task = () => {
+const Task = (props) => {
     return (
         <>
         <div className="border-bottom ">
           <div className="d-flex align-items-center justify-content-between px-3 py-3 container">
             <div className="px-3">
-              03-Desktop.png
+              {props.name}
             </div>
             <div className="d-flex align-items-center flex-fill px-3">
-              <span className="text-danger">921.3 KB</span>
+              <span className="text-danger">
+                {props.size} MB
+              </span>
               <div className="flex-fill mx-3">
                   <ProgressBar variant="success" animated now="100" />
               </div>
